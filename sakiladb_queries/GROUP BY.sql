@@ -14,4 +14,4 @@ SELECT c.first_name, c.last_name, SUM(p.amount) AS total_paid
 FROM payment p
 JOIN customer c USING (customer_id)
 GROUP BY customer_id
-HAVING total_paid>200;
+HAVING total_paid>100;
